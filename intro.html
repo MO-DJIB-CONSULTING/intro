@@ -1,0 +1,57 @@
+
+Result Size: 938 x 764
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIMO - Djibouti</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #fefefe;
+      color: #111;
+    }
+​
+    /* INTRO */
+    #intro {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: #FFD600;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 999;
+      animation: fadeOut 1s ease-in-out forwards;
+      animation-delay: 14s;
+    }
+​
+    #intro img {
+      width: 200px;
+      animation: bounceIn 2s ease;
+    }
+​
+    #intro p {
+      font-size: 1.5rem;
+      margin-top: 20px;
+      animation: fadeInText 3s ease;
+    }
+​
+    @keyframes bounceIn {
+      0% { transform: scale(0.7); opacity: 0; }
+      50% { transform: scale(1.1); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+​
+    @keyframes fadeOut {
+      to { opacity: 0; visibility: hidden; }
+    }
+​
+    @keyframes fadeInText {
+      0% { opacity: 0; transform: translateY(20px); }
